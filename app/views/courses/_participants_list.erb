@@ -1,1 +1,7 @@
 <h1>参加リスト</h1>
+<ul>
+  <% @participants.each do |participant| %>
+  <li><%= participant.name %></li>
+<% end %>
+
+</ul>
