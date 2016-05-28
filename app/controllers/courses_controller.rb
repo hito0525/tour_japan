@@ -12,6 +12,7 @@ class CoursesController < ApplicationController
   def show
     #@participants = Participant.all
     @participants = Participant.where(course_id: @course.id)
+    @participant = Participant.new(course_id: @course.id)
   end
 
   # GET /courses/new
